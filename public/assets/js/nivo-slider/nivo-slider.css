@@ -1,0 +1,204 @@
+.nivoSlider {
+    position:relative;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    max-width: none;
+}
+.nivo-main-image {
+    display: block !important;
+    position: relative !important; 
+    width: 100% !important;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+    z-index:6;
+    display:none;
+    background:white; 
+    filter:alpha(opacity=0); 
+    opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index:5;
+    height:100%;
+    top:0;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+    overflow:hidden;
+}
+/* Caption styles */
+.nivo-caption {
+    position:absolute;	
+    overflow:hidden;
+    /*top:58%;*/   
+    top:46%; 
+    color:#FFF;
+    left:0;
+    right:0;
+    z-index:100;
+}
+.nivo-caption a {
+    display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+.nivo-caption {	
+/*    -webkit-transition:all 1s ease;  delay = 1 s 
+    -moz-transition:all 1s ease;
+    -ms-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease;*/
+}
+.caption_bg{
+    float:left;
+}
+.caption_title{
+    position:relative;
+    font-size:32px;
+    font-family: 'gillsansregular';
+    text-transform: uppercase;
+    padding: 7px 18px 10px 18px;
+    background: rgba(0,102,179,0.60);
+    text-shadow: 0 0 1px rgba(255,255,255,0.5);
+}
+.caption_slogan_bg{
+    position:relative;
+    margin-top: 2px;
+    text-shadow: 0 0 1px rgba(255,255,255,0.5);
+}
+.caption_slogan{
+    float:left;
+    height: 32px;	
+    font-size:14px;
+    font-family: 'gillsansregular';
+    background: rgba(0,174,239,0.68);
+    text-transform: uppercase;
+    padding: 5px 12px 12px 11px;
+}
+.button_readmore{
+    float:left;
+    height: 32px;
+    margin-left: 2px;
+    font-size:13px;
+    font-family: 'gillsansregular';
+    background: rgba(244,124,22,0.68);
+    text-transform: uppercase;
+    padding: 5px 0 12px 12px;
+}
+.button_readmore:hover{
+    background:rgba(244,124,22,0.80);
+}
+.button_readmore span{
+    float:right;
+    width: 14px;
+    height: 14px;
+    margin:3px 11px 0 8px;
+    background:url(readmore.png) no-repeat;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+}
+.caption_bg:hover .button_readmore span{
+    margin:3px 11px 0 16px;
+}
+@media only screen and (max-width : 959px) 
+{
+    .nivo-caption {
+        top:50%;
+    }
+    .caption_title{
+        position:relative;
+        font-size:22px;
+        padding: 8px 12px 12px 12px;
+    }
+    .caption_slogan{
+        height: 30px;	
+        font-size:14px;
+        padding: 4px 10px 0 10px;
+    }
+    .button_readmore{
+        height: 30px;
+        margin-left: 2px;
+        font-size:14px;
+        padding: 4px 2px 0 10px;
+    }
+
+    .button_readmore span{
+        margin:4px 7px 0 8px;
+    }
+    .caption_bg:hover .button_readmore span{
+        margin:4px 7px 0 12px;
+    }
+
+}
+@media only screen and (max-width : 767px) 
+{
+    .nivo-caption {
+        top:42%;
+    }
+    .caption_title{
+        position:relative;
+        font-size:15px;
+        padding: 4px 10px 5px 10px;
+    }
+    .caption_slogan
+    {
+        height: 23px;	
+        font-size:11px;
+        padding: 1px 8px 2px 8px;
+    }
+    .button_readmore
+    {
+        height: 23px;
+        margin-left: 2px;
+        font-size:11px;
+        padding: 0px 0px 2px 6px;
+    }
+
+    .button_readmore span{
+        margin:4px 7px 0 8px;
+    }
+    .caption_bg:hover .button_readmore span{
+        margin:4px 7px 0 12px;
+    }
+
+}
+@media only screen and (max-width : 400px) 
+{
+    .nivo-caption {
+        top:58%;
+    }
+    .caption_title
+    {
+        font-size: 12px;   
+    }
+    .caption_slogan
+    {
+        display: none;
+    }
+    .button_readmore
+    {
+        display: none;
+    }
+}

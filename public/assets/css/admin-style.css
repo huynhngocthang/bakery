@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jan 13, 2016, 7:13:36 PM
+    Author     : TNM Group
+*/
+.d-block {display: block !important;}
+.feature-image {width: 100%;}
+.pagination > li > a.active {
+  background: #eaeaea;
+  color: #333;
+  font-weight: bold;
+}
+.sorting-input {width: 50px;}
+.admin-gl-img {width: 100%;}
+.grayscale-invert:hover {
+    opacity: 0.8;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.col-xs-12 .box .form-group{
+  margin-left: 10px;
+}
+.col-xs-12 .box .form_search_user{
+  margin-left: 0;
+}
+.form_total{
+  margin-left: 10px;
+  overflow: hidden;
+}
+.total{
+  float: left;
+}
+.total-price{
+  float: left;
+}
+#frmMain{
+  position: relative;
+}
+#frmMain .box-header{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 30%;
+}
+.box_body_category{
+  margin-top: 40px;
+}
+#frmMain .addcategory{
+  top: 0;
+}
+#frmMain .add_product{
+  top:-50px;
+}
+#frmMain .add_order{
+  top: -50px;
+}
+.fancybox-manual {
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+    position: relative;
+    transition:all 0.3s;
+    opacity: 1;
+    display: block;
+}
+.fancybox-manual:hover {opacity: 0.7;box-shadow: 0 0 0 6px #0066b2;}
+.btn-remove-img {position: absolute;right: 4px;top: -8px;}
+.ui-dialog { z-index: 9999 !important ;}
+.other-img {position: relative;}
+.remove-other-img {position: absolute;top: 5px; right: 20px;}
+#datepicker{
+    width: 50%;
+    float: left !important;
+}
+.btnFilterDate{
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+.fix-drop{
+    min-width: 30px;
+}
+.fix-drop a{
+    display: block;
+    margin-bottom: 5px;
+}
+#frmMain{
+    padding: 10px;
+}

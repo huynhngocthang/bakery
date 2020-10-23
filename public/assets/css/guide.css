@@ -1,0 +1,99 @@
+
+.titleGuide{
+	padding-top: 30px;
+  font-size: 35px;
+  /* padding-bottom: 30px; */
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  width: 350px;
+  margin: 20px auto;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  background: #fff;
+  font-family: Roboto.;
+  z-index: 1;
+}
+.titleGuide::before{
+	background-image: url('../images/common/icon_bakery.png');
+	background-size: contain;
+	background-repeat: repeat;
+	content: "";
+	position: absolute;
+	z-index: 2;
+	width: 85%;
+	height: 100%;
+	left: 102%;
+	top: 5px;
+}
+.titleGuide::after{
+	background-image: url(../images/common/icon_bakery.png);
+	background-size: contain;
+	background-repeat: repeat;
+	content: "";
+	position: absolute;
+	z-index: 2;
+	width: 85%;
+	height: 100%;
+	right: 102%;
+	top: 5px;
+}
+.contentGuide{
+	width: 100%;
+}
+.contentGuide .line{
+	padding-bottom: 10px;
+}
+.contentGuide .line .num-line{
+	font-size: 18px;
+	font-weight: bold;
+}
+.contentGuide .line .text-line{
+	font-size: 16px;
+}
+.contentGuide .line .text-line i{
+	font-size: 16px;
+	color:blue;
+	cursor: pointer;
+}
+.img-line{
+	width: 80%;
+	padding: 30px 0;
+}
+.noteGuide{
+	font-size: 15px;
+	border: 1px solid;
+	color: red;
+	margin-right: 43%;
+	margin-top: -22px;
+	padding-left: 1%;
+}
+.thanksGuide{
+	font-size: 25px;
+	color: black;
+	padding-top: 20px;
+}
+@media only screen and (max-width: 768px){
+	.noteGuide{
+			margin-right: 0;
+	}
+	.titleGuide{
+    width: 49%;
+		font-size: 23px;
+	}
+	.titleGuide::before{
+		width: 42%;
+		top:7px;
+		background-position: right;
+		background-repeat: no-repeat;
+	}
+	.titleGuide::after{
+		width: 42%;
+		top:7px;
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+}
